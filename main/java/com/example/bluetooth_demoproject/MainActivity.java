@@ -306,13 +306,7 @@ public class MainActivity extends Activity {
                         break;
                     }
                 }
-                //CHECK BLUETOOTH available or not------------------------------------------------
-               // if (!found) {
-               //     Toast.makeText(this, "Bluetooth not been found", Toast.LENGTH_LONG).show();
-               // } else {
-               //     i.setClassName(packageName, className);
-               //     startActivity(i);
-              //  }
+          
             }
         } else {
             Toast.makeText(this, "Bluetooth is cancelled", Toast.LENGTH_LONG).show();
@@ -331,11 +325,7 @@ public class MainActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-     //   if (id == R.id.action_settings) {
-           // Toast.makeText(this, "**********************************\nDeveloper: www.santoshkumarsingh.com\n**********************************", Toast.LENGTH_LONG).show();
-       //     return true;
-       // }
+      
         return super.onOptionsItemSelected(item);
     }
 
