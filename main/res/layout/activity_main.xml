@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!--Display if bluetooth is available-->
+
+    <TextView
+        android:id="@+id/BluetoothStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <!-- Bluetooth Icon -->
+    <ImageButton
+        android:id="@+id/bluetoothIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        />
+
+    <!-- On button -->
+    <Button
+        android:id="@+id/onButton"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn on"
+        android:theme="@style/AppTheme"
+        />
+
+
+    <!-- Off button -->
+
+
+    <!-- discover button -->
+    <Button
+        android:id="@+id/discoverableButton"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Discoverable"
+        />
+
+    <!-- Get List of paired devices -->
+    <Button
+        android:id="@+id/pairedDevices"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get aired Devices"
+
+        />
+
+
+
+
+    <!-- Show paired devices -->
+    <TextView
+        android:id="@+id/pairedDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text=""
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FilePath"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12dp"
+        android:layout_marginBottom="20dp"
+        android:theme="@android:style/Animation.Translucent"
+        android:textColor="#2fffff"
+        android:padding="15dp"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/opendailog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BTNquit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Select File"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:textColor="#edebff"
+        android:background="#0bba1c" />
+
+    <Button
+        android:id="@+id/sendBluetooth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BTNquit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Send"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:textColor="#edebff"
+        android:background="#113b6a" />
+
+    <Button
+        android:id="@+id/BTNquit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="exit"
+        android:layout_margin="50dp"
+        android:text="Quit"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+        android:background="#bc2745"
+        android:textColor="#29faf5" />
+
+</LinearLayout>
